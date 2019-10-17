@@ -7,10 +7,6 @@ Link of the webpage of the tutorial: <a href="https://sqlzoo.net/wiki/SQL_Tutori
 
 The main objective of this project is to complete each lesson in the tutorial, putting into practice the SQL studies carried out by the author.
 
-## Live Version
-
-<a href="#">Live Version on Repl.it</a>
-
 ## Author - click on the link below to see the author's github
 
 * <a href="https://github.com/SofiBretz"> Github: Sofi Bretz</a>
