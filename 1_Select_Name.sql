@@ -1,4 +1,4 @@
--- SELECT basics
+-- SELECT names
 -- Some pattern matching queries
 
 -- 1) You can use WHERE name LIKE 'B%' to find the countries that start with "B".
