@@ -7,7 +7,7 @@
 -- Modify it to show the population of Germany:
 
 SELECT population FROM world
-  WHERE name = 'Germany'
+  WHERE name = 'Germany';
 
 -- 2) Scandinavia. 
 -- Checking a list The word IN allows us to check if an item is in a list.
