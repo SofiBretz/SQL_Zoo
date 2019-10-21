@@ -1,4 +1,5 @@
 -- The JOIN operation
+-- In which we join two tables; game and goals.
 
 -- 1) Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for: teamid = 'GER'
 SELECT matchid, player FROM goal 
@@ -29,7 +30,7 @@ SELECT mdate, teamname FROM game JOIN eteam ON (team1=eteam.id)
 
 -- 8) Instead show the name of all players who scored a goal against Germany.
 SELECT DISTINCT player FROM game JOIN goal ON matchid = id 
-    WHERE (team1='GER' OR team2='GER') AND teamid != 'GER'
+    WHERE (team1='GER' OR team2='GER') AND teamid != 'GER';
   
 -- 9) Show teamname and the total number of goals scored.
 SELECT teamname, COUNT(player) FROM eteam JOIN goal ON id=teamid GROUP BY teamname;
@@ -39,7 +40,7 @@ SELECT stadium, COUNT(player) FROM game JOIN goal ON id=matchid GROUP BY stadium
 
 -- 11) For every match involving 'POL', show the matchid, date and the number of goals scored.
 SELECT matchid, mdate, COUNT(teamid) FROM game JOIN goal ON matchid = id 
-  WHERE (team1 = 'POL' OR team2 = 'POL') GROUP BY matchid, mdate
+  WHERE (team1 = 'POL' OR team2 = 'POL') GROUP BY matchid, mdate;
 
 -- 12) For every match where 'GER' scored, show matchid, match date and the number of goals scored by 'GER'
 SELECT matchid, mdate, COUNT(teamid) FROM game JOIN goal ON matchid = id 
